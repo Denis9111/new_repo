@@ -1,14 +1,9 @@
-'''создал новую ветку нью бранч и добавил доку \
-теперь тут верси 2'''
+import os, time
 
-def num(a: list):
-    return len(a)
+source = ['/Users/m1pro/IT/test1', '/Users/m1pro/IT/test2']
+target_dir = '/Users/m1pro/IT/rescopy'
 
+today = target_dir + os.sep + time.strftime('%Y-%m-%d')
+now = time.strftime('%H%M%S')
 
-print(num([1, 2, 3]))
-print(num("abc"))
-
-for i in range(5):
-    print(i)
-
-__version__ = 2.0
+__version__ = 3.0
